@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>free consultation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./consultation.css">
+
+
+
+
+</head>
+
+    <body>
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="../indexhome.html" id="logo">
+              <img src="../Overseases Wings-01.svg" alt="" width="200px" height="80px" />
+            </a>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav menunav">
+                <!-- Nav items -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../indexhome.html">Home</a>
+                </li>
+               
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li> <a class="dropdown-item" href="../prep/prep.html">Test Preparation</a> </li>
+                      <li><a class="dropdown-item" href="../educationloans/educationloan.html">Education Loan</a></li>
+                      <li><a class="dropdown-item" href="../SOP SERVICES/SOP.html">SOP Services</a></li>
+                      <li><a class="dropdown-item" href="./LOR.html">LOR Writing Services</a></li>
+                      <li><a class="dropdown-item" href="../guide/guide.html">Guidance</a></li>
+                     
+    
+                     
+                    </ul>
+                  </li>
+               
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Courses</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../mastersdegree/masters.html">MASTERS</a>
+                    </li>
+               
+                    <li>
+                      <a class="dropdown-item" href="../bachelorsdegree/bachelors.html">BACHELORS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../PHD DEGREE/PHD.html">Ph.D(DOCTORAL)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Countries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../universities/AUSTRALIA/AUSTRALIA.HTML">
+                        AUSTRALIA</a></li>
+                    <li><a class="dropdown-item" href="../universities/USA/USA.html"> USA </a></li>
+                    <li><a class="dropdown-item" href="../universities/UK/UK.html"> UK</a></li>
+                    <li><a class="dropdown-item" href="../universities/canada/canada.html"> CANADA</a></li>
+                    <li><a class="dropdown-item" href="../universities/NEWZEALAND/NEWZEALAND.html">
+                        NEWZELAND</a></li>
+                    <li><a class="dropdown-item" href="../universities/ireland/ireland.html"> IRELAND</a></li>
+                    <li><a class="dropdown-item" href="../universities/sweeden/sweeden.html"> SWEEDEN</a></li>
+                    <li><a class="dropdown-item" href="../universities/france/france.html">FRANCE</a></li>
+                    <li><a class="dropdown-item" href="../universities/germany/germany.html"> GERMANY</a></li>
+                  </ul>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="../about us/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contactus/contact.html">Contact </a>
+                </li>
+               
+              </ul>
+    
+              <ul class="navbar-nav buttonnav">
+                <li class="nav-item">
+                  <a href="../loginpage.html" class="btn LOGIN  rounded-pill  " type="button">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../signup page.html" class="btn LOGIN rounded-pill   " type="button">Sign Up</a>
+                </li>
+              </ul>
+            
+            
+            </div>
+          </div>
+        </nav>
+      </header>
+
+  <button id="goToTopButton" class="btn btn-light">
+  <i class="bi bi-arrow-up"></i>
+  </button>
+  <div class="whatsapp-icon" onclick="redirectToWhatsApp()" title=" WhatsApp Us">
+    <div class="tooltip">WhatsApp Us</div>
+</div>
+
+  <div class="container-fluid consulting">
+ <div class="container">
+   
+        <div class="row consultrow  d-flex  justify-content-between align-items-center ">
+          <p class="fs-4 fw-bold text-dark text-center py-2">Schedule a free consultation</p>
+
+            <div class=" col-lg-6 col-md-12 col-sm-12  ">
+          
+                <p class="fs-5 text-dark text-center">Please fill  your details below for a call-back:</p>
+                <form onsubmit="submitForm(event)">
+                    <div class="row  ">
+                        
+                        <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                            <label for="firstName" class="form-label">Full Name*</label>
+                            <input type="text" class="form-control" id="Full Name" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                          <label for="lastName" class="form-label">Mobile *</label>
+                          <input type="tel" class="form-control" id="mobile" placeholder="Enter 10 digit mobile number " required>
+                      </div>
+                    </div>
+
+                    <div class="row ">
+                       
+                        <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                          <label for="email" class="form-label">Email*</label>
+                          <input type="email" class="form-control" id="email" placeholder="Email" required>
+                      </div>
+                       
+                        <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                            <label for="country" class="form-label">Country*</label>
+                            <input type="text" class="form-control" id="country" placeholder="Country" required>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                      <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                        <label for="education" class="form-label">Select Education</label>
+                        <select id="education" class="form-select" required>
+                            <option value="" disabled selected>Select Education</option>
+                            <option value="Pursue Under Graduation"> Under Graduation</option>
+                            <option value="Pursue Post Graduation"> Post Graduation</option>
+                            <option value="Working Professional">Doctorate</option>
+                          
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3 mt-2">
+                            
+                      <label for="country" class="form-label"> Study Destination</label>
+                      <select class="form-select" id="country" name="country" required>
+                        <option value="" disabled selected>Select Study Destination</option>
+                        <option value="USA">USA</option>
+                        <option value="AUSTRALIA">AUSTRALIA </option>
+                        <option value="CANADA">CANADA</option>
+                        <option value="UK">UK</option>
+                        <option value="NEW ZEALAND">NEW ZEALAND </option>
+                        <option value="SWEEDEN">SWEEDEN</option>
+                        <option value="FRANCE">FRANCE</option>
+                        <option value="GERMANY">GERMANY</option>
+                        <option value="IRELAND">IRELAND</option>
+      
+                    </select>
+                
+                  </div>
+                    </div>
+                    <div class="row start mb-3 mt-2  ">
+                        <div class="col-md-12 text-center ">
+                            <button type="submit" class="btn rounded-pill btn-block text-center text-light fw-bold ">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                  </div>  
+                   
+                  <div class=" col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center  ">
+                    <img src="../assets/Group 77 (1).png" alt=""  width="500" height="300">
+                  </div> 
+
+        </div>
+  
+    </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container py-4">
+       
+          <div class="row text-center text-white d-flex justify-content-between ">
+            <div class="col-md-6 col-lg-4 col-sm-6 col-x-sm-12 mt-2 mb-2 address ">
+              <a href="../indexhome.html" class="footlogo mx-auto"><img src="../Overseases Wings-01.svg" width="150" height="auto"  alt=""
+                style="background-color: white" /></a>
+                <div class="footadd ">
+            <h5 class="CORPORATE  py-2">Overseas Wings Consultancy</h5>
+            <p class="mt-1">
+              Flat No: 302,Sree Infra's Nakshatra,<br />
+              HUDA Layout,Nallagandla,<br />
+              Rangareddy  - 500019, Telangana
+            </p>
+          </div>
+        
+            
+         
+         
+          </div>
+          <div class="col-md-6 col-lg-2 col-sm-6 col-x-sm-12 textwidget-link mt-2 mb-2">
+            <h5 class="mt-2 fw-bold ">Services</h5>
+            <div class="link mt-2 d-flex flex-column ">
+              <a href="../prep/prep.html">Test Preparation</a> 
+              <a href="../educationloans/educationloan.html">Student Loans</a>
+      
+              <a href="../SOP SERVICES/SOP.html">SOP Services</a> 
+              <a href="../LORSERVICES/LOR.html">LOR  Services</a> 
+              <a href="../guide/guide.html"> Guidance</a> 
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 col-sm-6 col-x-sm-12 mt-2 mb-2 textwidget-link ">
+            <h5 class="mt-2  fw-bold ">Countries</h5>
+            <div class="link mt-2 d-flex flex-column">
+              <a href="../universities/USA/USA.html">  United States</a>
+             
+              <a href="../universities/AUSTRALIA/AUSTRALIA.html">
+                Australia</a>
+            
+              <a href="../universities/canada/canada.html">
+                Canada</a>
+       
+              <a href="../universities/UK/UK.html">  United Kingdom</a>
+              
+              <a href="../universities/ireland/ireland.html">
+                 Ireland</a>
+       
+              <a href="../universities/NEWZEALAND/NEWZEALAND.html">
+               New Zealand</a>
+            
+              <a href="../universities/germany/germany.html">
+                Germany</a>
+           
+            </div>
+          </div>
+       
+         
+          <div class="col-md-6 col-lg-2 col-sm-6 col-x-sm-12 mt-2 mb-2 textwidget-link">
+            <h5 class="mt-2  fw-bold">Explore</h5>
+            <div class="link mt-2  d-flex flex-column justify-content-center">
+              <a href="./consultation.html">Free Consultation</a>
+              <a href="../about us/aboutus.html">About Us</a>
+              
+             
+              <a href="../contactus/contact.html">Contact us</a> 
+              <a href="../PrivacyPolicy/privacypolicy.html"> Privacy Policy</a>
+          
+              <a href="../terms&conditions/terms.html"> Terms & Conditions</a>
+       
+              <a href="../schoralship terms/scholarship.html">
+                Scholarship Terms</a>
+      
+              <a href="../FAQ/faq.html"> FAQS</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../homescript.js"></script>
+
+    </body>
+    
+    </html>    
